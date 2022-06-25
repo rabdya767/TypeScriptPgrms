@@ -10,6 +10,5 @@
   * │
   * └─src
   *        index.ts
-  *
   */
 console.log(`Hello my name is RABDYA SANTHOSH`);
