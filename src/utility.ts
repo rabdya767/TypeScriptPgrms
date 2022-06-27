@@ -7,6 +7,7 @@ interface Point {
     y: number
 }
 
+// eslint-disable-next-line prefer-const
 let pointPart: Partial<Point> = {};
 // `Partial` allows x and y to be optional
 pointPart.x = 10;
@@ -21,6 +22,7 @@ interface Car {
     mileage?: number;
 }
 
+// eslint-disable-next-line prefer-const
 let myCar: Required<Car> = {
     make: 'Ford',
     model: 'Focus',
@@ -59,6 +61,7 @@ interface Prsn {
  *  }; 
  */
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const bob: Pick<Prsn, 'name'> = {
     name: 'Bob'
     // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here

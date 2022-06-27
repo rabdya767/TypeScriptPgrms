@@ -6,7 +6,7 @@ const car: { type: string, model: string, year: number } = {
 
 console.log(`Car Object is ${Object.keys(car)}`);
 
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const car1 : { type : string , mileage : number} ={
     type : "Toyota",
     mileage : 60

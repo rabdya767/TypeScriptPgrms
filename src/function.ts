@@ -20,15 +20,15 @@ function multiply(a: number, b: number): number{
     return a*b;
 }
 
-function pow(a:number,b:number=2){
+function pow(a:number,b=2){
     return a**b;
 }
 
 function restParameters( a: number , b: number, ...rest: number[]){
     return a+b+rest.reduce((p,c) => p+c ,0);
 }
-const a : number = 10;
-const b : number =5;
+const a  = 10;
+const b  =5;
 
 console.log(`Addition of ${a} and ${b} is ${add(a,b)}`);
 console.log(`Addition of ${a},12 and ${b} is ${add(a,b,12)}`);

@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * any type
  */
-let u = true;
+const u = true;
 
 /**
  * u = "string";
@@ -11,6 +12,7 @@ let u = true;
  * Argument of type 'boolean' is not assignable to parameter of type 'number'
  */
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let v: any = true;
 v = "any string";
 //"any string" in this case
@@ -39,6 +41,8 @@ console.log(`w is ${w}`);
 /**
  * undefined and null
  */
-let y: undefined = undefined;
-let z: null = null;
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
+const y: undefined = undefined;
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
+const z: null = null;
 console.log(`x is ${y} and y is ${z}`);

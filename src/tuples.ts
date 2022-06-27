@@ -6,6 +6,7 @@
 
 let empDetails: [number, string, boolean];
 
+// eslint-disable-next-line prefer-const
 empDetails = [100, "Santhosh", true];
 
 console.log(`Emp details id : ${empDetails[0]} Name : ${empDetails[1]} and student : ${empDetails[2]}`);
