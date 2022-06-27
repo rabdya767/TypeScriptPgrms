@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function makeDate(timestamp: number): Date;
 
 function makeDate(m: number, d: number, y: number): Date;

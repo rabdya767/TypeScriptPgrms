@@ -4,17 +4,24 @@
   "description": "typescript",
   "main": "intro.js",
   "scripts": {
-    "test": "nodemon intro.js"
+    "test": "nodemon intro.js",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc"
   },
   "keywords": [
     "typescript"
   ],
   "author": "rabdya santhosh",
   "license": "MIT",
-  "dependencies": {
-    "nodemon": "^2.0.18"
-  },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "nodemon": "^2.0.18",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
   }
 }

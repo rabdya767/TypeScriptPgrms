@@ -18,5 +18,5 @@ const Car : car = {
     model : CarModel
 };
 //works fine in es2017 version or later
-// console.log(`Car is ${Object.keys(Car)} --> ${Object.values(Car)}`);
+console.log(`Car is ${Object.keys(Car)} --> ${Object.values(Car)}`);
 

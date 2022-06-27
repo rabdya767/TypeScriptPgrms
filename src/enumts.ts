@@ -4,7 +4,7 @@ enum COLORS {
 
 console.log(`Position of RED color is ${COLORS.RED}`);
 
-for (let x in COLORS) {
+for (const x in COLORS) {
     console.log(`${COLORS[x]} --> ${x}`);
 }
 
@@ -16,7 +16,7 @@ enum STUDENTS {
     RANI,
     RAM
 }
-for (let x in STUDENTS) {
+for (const x in STUDENTS) {
     console.log(`${STUDENTS[x]} --> ${x}`);
 }
 
@@ -36,7 +36,7 @@ enum CardinalDirections {
     East = "East",
     South = "South",
     West = "West"
-};
+}
 // logs "North"
 console.log(CardinalDirections.North);
 // logs "West"
