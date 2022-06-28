@@ -8,7 +8,7 @@ var COLORS;
     COLORS[COLORS["YELLOW"] = 4] = "YELLOW";
 })(COLORS || (COLORS = {}));
 console.log(`Position of RED color is ${COLORS.RED}`);
-for (let x in COLORS) {
+for (const x in COLORS) {
     console.log(`${COLORS[x]} --> ${x}`);
 }
 var STUDENTS;
@@ -20,7 +20,7 @@ var STUDENTS;
     STUDENTS[STUDENTS["RANI"] = 4] = "RANI";
     STUDENTS[STUDENTS["RAM"] = 5] = "RAM";
 })(STUDENTS || (STUDENTS = {}));
-for (let x in STUDENTS) {
+for (const x in STUDENTS) {
     console.log(`${STUDENTS[x]} --> ${x}`);
 }
 var StatusCodes;
@@ -41,7 +41,6 @@ var CardinalDirections;
     CardinalDirections["South"] = "South";
     CardinalDirections["West"] = "West";
 })(CardinalDirections || (CardinalDirections = {}));
-;
 // logs "North"
 console.log(CardinalDirections.North);
 // logs "West"

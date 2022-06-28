@@ -5,6 +5,7 @@
  * To define a tuple, specify the type of each element in the array:
  */
 let empDetails;
+// eslint-disable-next-line prefer-const
 empDetails = [100, "Santhosh", true];
 console.log(`Emp details id : ${empDetails[0]} Name : ${empDetails[1]} and student : ${empDetails[2]}`);
 empDetails.push("$300"); //Throws error for readonly case

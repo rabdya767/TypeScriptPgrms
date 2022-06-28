@@ -60,6 +60,6 @@ class NamedValue {
         return `${this.name}: ${this._value}`;
     }
 }
-let value = new NamedValue('myNumber');
+const value = new NamedValue('myNumber');
 value.setValue(10);
 console.log(value.toString()); // myNumber: 10
