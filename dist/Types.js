@@ -3,7 +3,9 @@
  * Explicit Type Assignment
  * Implicit Type Assignment
  */
-let firstName = "Rabdya Santhosh";
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
+const firstName = "Rabdya Santhosh";
+// eslint-disable-next-line prefer-const
 let firstName1 = "James Nicholas";
 console.log(`firstName is ${firstName}`);
 console.log(`firstName1 is ${firstName1}`);

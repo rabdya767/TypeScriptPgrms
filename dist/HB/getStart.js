@@ -1,5 +1,7 @@
 "use strict";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 console.log("Hello TypeScript...!");
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 const message = "Hello World!";
 console.log(message.toLowerCase());
 // message();
