@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 type carYear = number;
 type carType = string;
 type carModel = string;

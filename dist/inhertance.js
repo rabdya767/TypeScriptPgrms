@@ -45,7 +45,7 @@ console.log(`Area is ${AbsObj.getPolygonArea()}`);
 function createPair(v1, v2) {
     return [v1, v2];
 }
-console.log(createPair('hello', 42)); // ['hello', 42]
+console.log(createPair("hello", 42)); // ['hello', 42]
 class NamedValue {
     constructor(name) {
         this.name = name;
@@ -60,6 +60,6 @@ class NamedValue {
         return `${this.name}: ${this._value}`;
     }
 }
-const value = new NamedValue('myNumber');
+const value = new NamedValue("myNumber");
 value.setValue(10);
-console.log(value.toString()); // myNumber: 10
+console.log(value.toString()); // myNumber: 10y

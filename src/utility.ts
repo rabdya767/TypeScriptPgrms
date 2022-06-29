@@ -1,3 +1,4 @@
+/*eslint-disable max-len */
 /**
  * Partial changes all the properties in an object to be optional.
  */
@@ -11,7 +12,7 @@ interface Point {
 let pointPart: Partial<Point> = {};
 // `Partial` allows x and y to be optional
 pointPart.x = 10;
-console.log(pointPart.x, pointPart.y)
+console.log(pointPart.x, pointPart.y);
 
 /**
  * Required changes all the properties in an object to be required.
@@ -24,8 +25,8 @@ interface Car {
 
 // eslint-disable-next-line prefer-const
 let myCar: Required<Car> = {
-    make: 'Ford',
-    model: 'Focus',
+    make: "Ford",
+    model: "Focus",
     mileage: 12000 // `Required` forces mileage to be defined
 };
 
@@ -37,10 +38,10 @@ console.log(`${myCar.make} ${myCar.model} ${myCar.mileage}`);
  * 
  */
 const nameAgeMap: Record<string, number> = {
-    'Rabdya': 41,
-    'Sravan': 51,
-    'Venkatesh': 30,
-    'Sanath': 14
+    "Rabdya": 41,
+    "Sravan": 51,
+    "Venkatsh": 30,
+    "Sanath": 14
 };
 
 console.log(`${nameAgeMap.Rabdya}`);
@@ -62,7 +63,7 @@ interface Prsn {
  */
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const bob: Pick<Prsn, 'name'> = {
-    name: 'Bob'
+const bob: Pick<Prsn, "name"> = {
+    name: "Bob"
     // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
 };

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable max-len */
 interface shape {
     getArea: () => number;
 }
@@ -54,26 +56,26 @@ console.log(`Area is ${AbsObj.getPolygonArea()}`);
 function createPair<S, T>(v1: S, v2: T): [S, T] {
     return [v1, v2];
 }
-console.log(createPair<string, number>('hello', 42)); // ['hello', 42]
+console.log(createPair<string, number>("hello", 42)); // ['hello', 42]
 
 class NamedValue<T> {
     private _value: T | undefined;
   
     constructor(private name: string) {}
   
-    public setValue(value: T) {
-      this._value = value;
+    public setValue(value: T) :any {
+        this._value = value;
     }
   
     public getValue(): T | undefined {
-      return this._value;
+        return this._value;
     }
   
     public toString(): string {
-      return `${this.name}: ${this._value}`;
+        return `${this.name}: ${this._value}`;
     }
-  }
+}
   
-  const value = new NamedValue<number>('myNumber');
-  value.setValue(10);
-  console.log(value.toString()); // myNumber: 10
+const value = new NamedValue<number>("myNumber");
+value.setValue(10);
+console.log(value.toString()); // myNumber: 10y

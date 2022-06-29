@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 enum COLORS {
     RED, BLACK, WHITE, GREEN, YELLOW
 }
@@ -32,7 +33,7 @@ console.log(StatusCodes.NotFound);
 console.log(StatusCodes.Success);
 
 enum CardinalDirections {
-    North = 'North',
+    North = "North",
     East = "East",
     South = "South",
     West = "West"

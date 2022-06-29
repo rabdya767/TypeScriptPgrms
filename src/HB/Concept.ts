@@ -1,3 +1,4 @@
+/*eslint-disable max-len */
 interface OUCE {
     name: "OSMANIA";
     area: number;
@@ -11,7 +12,7 @@ interface JNTU {
     kind: "PVT";
     location: "KPHB";
     rank: number;
-    university : boolean;
+    university: boolean;
 }
 
 
@@ -19,13 +20,13 @@ type COLLEGE = OUCE | JNTU;
 
 function getDetails(clg: COLLEGE): string {
 
-    switch(clg.name){
-        case "JNTU":
-            return  `Our college is ${clg.name} located in ${clg.location}`;
-        case "OSMANIA":
-            return `Our college is ${clg.name} UNIVERSITY`;
-        default:
-            return `Cannot find the details of ${clg.name} college`;
+    switch (clg.name) {
+    case "JNTU":
+        return `Our college is ${clg.name} located in ${clg.location}`;
+    case "OSMANIA":
+        return `Our college is ${clg.name} UNIVERSITY`;
+    default:
+        return `Cannot find the details of ${clg.name} college`;
     }
 
     // if (clg.name === "JNTU") {
@@ -38,7 +39,7 @@ function getDetails(clg: COLLEGE): string {
     //     return `Cannot find the details of your college`;
     // }
 }
-console.log(`${getDetails({ name: "CBIT", area: 200, kind: "PVT", location: "KPHB" ,rank : 4,university:false})}`);
+console.log(`${getDetails({ name: "CBIT", area: 200, kind: "PVT", location: "KPHB", rank: 4, university: false })}`);
 // console.log(`${getDetails({ name: "OSMANIA", area: 200, kind: "PVT", location: "SECUNDRABAD"})}`);
 
 function example(): string | number {

@@ -7,7 +7,8 @@ rollnumbers.push(46);
 rollnumbers.push(12);
 rollnumbers.push(56);
 rollnumbers.push(41);
-//Error: Argument of type 'string' is not assignable to parameter of type 'number'
+//Error: 
+//Argument of type 'string' is not assignable to parameter of type 'number'
 //rollnumbers.push("41");
 console.log(`Array contains ${rollnumbers}`);
 /**

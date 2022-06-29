@@ -1,5 +1,6 @@
 "use strict";
 /* eslint-disable prefer-const */
+/* eslint-disable max-len */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 function firstElement(arr) {
     return arr[0];
@@ -23,6 +24,7 @@ let arr3 = combine(arr1, arr2);
 console.log(`arr1 is ${arr1} arr2 is ${arr2} and combined array is ${arr3}`);
 // Type 'string' is not assignable to type 'number'
 console.log(combine(arr1, ["hello", "world"]));
+// eslint-disable-next-line @typescript-eslint/naming-convention
 function Greet(param) {
     console.log(`Hello ${param}`);
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 class Person {
     // public constructor(private name:string){};
     private name: string;
@@ -16,5 +17,5 @@ class Person {
 }
 
 const person = new Person("Jane");
-console.log(`Name is ${person.getName()}`)
+console.log(`Name is ${person.getName()}`);
 console.log(`Person Details are ${person.getDetails()}`);

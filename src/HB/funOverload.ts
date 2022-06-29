@@ -21,11 +21,12 @@ console.log(`${d2}`);
 
 function len(s: string): number;
 function len(arr: any[]): number;
-function len(x: any) {
+function len(x: any): number {
     return x.length;
 }
 
 console.log(`len("Hello World") is ${len("Hello World")}`);
+// eslint-disable-next-line max-len
 console.log(`len([12,33,57,53,13,87,90, 1, 2.48]) is ${len([12, 33, 57, 53, 13, 87, 90, 1, 2.48])}`);
 console.log(`len(["a","b","c","d","e"]) is ${len(["a", "b", "c", "d", "e"])}`);
 console.log(`len(" ") is ${len(" ")}`);

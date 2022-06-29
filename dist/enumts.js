@@ -1,4 +1,5 @@
 "use strict";
+/* eslint-disable @typescript-eslint/naming-convention */
 var COLORS;
 (function (COLORS) {
     COLORS[COLORS["RED"] = 0] = "RED";

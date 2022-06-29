@@ -1,4 +1,5 @@
 "use strict";
+/*eslint-disable max-len */
 /**
  * Partial changes all the properties in an object to be optional.
  */
@@ -9,8 +10,8 @@ pointPart.x = 10;
 console.log(pointPart.x, pointPart.y);
 // eslint-disable-next-line prefer-const
 let myCar = {
-    make: 'Ford',
-    model: 'Focus',
+    make: "Ford",
+    model: "Focus",
     mileage: 12000 // `Required` forces mileage to be defined
 };
 console.log(`${myCar.make} ${myCar.model} ${myCar.mileage}`);
@@ -20,10 +21,10 @@ console.log(`${myCar.make} ${myCar.model} ${myCar.mileage}`);
  *
  */
 const nameAgeMap = {
-    'Rabdya': 41,
-    'Sravan': 51,
-    'Venkatesh': 30,
-    'Sanath': 14
+    "Rabdya": 41,
+    "Sravan": 51,
+    "Venkatsh": 30,
+    "Sanath": 14
 };
 console.log(`${nameAgeMap.Rabdya}`);
 /**
@@ -34,6 +35,6 @@ console.log(`${nameAgeMap.Rabdya}`);
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const bob = {
-    name: 'Bob'
+    name: "Bob"
     // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
 };

@@ -9,7 +9,7 @@ console.log(message.toLowerCase());
 const User = {
     name: "James",
     age: 26
-}
+};
 
 // console.log(User.salary);
 //JS will give undefined
@@ -27,15 +27,15 @@ console.log(message.toLocaleUpperCase());
 //     console.log("Both are equal");
 // }
 
-function greet(person: string, date: Date) {
+function greet(person: string, date: Date): void {
     console.log(`Hello ${person}, today is ${date.toDateString()}`);
 }
 greet("Rabdya", new Date());
 
 const Names: string[] = ["James", "Puppy", "Alice"];
-Names.forEach((s: string) => { console.log(s.toUpperCase()); })
+Names.forEach((s: string) => { console.log(s.toUpperCase()); });
 
-function printId(id: number | string) {
+function printId(id: number | string): void {
     if (typeof (id) === "string") {
         console.log(`Your id is ${id.toUpperCase()}`);
     }
@@ -47,13 +47,14 @@ function printId(id: number | string) {
 printId(202);
 printId("s2ajhje23ns");
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 type alias = {
     // interface alias {
     x: number;
     y: number;
 }
 
-function printCoord(pt: alias) {
+function printCoord(pt: alias): void {
     console.log(`(x,y) = (${pt.x},${pt.y})`);
 }
 
@@ -63,18 +64,18 @@ function compare(a: string, b: string): -1 | 0 | 1 {
     return a === b ? 0 : a > b ? 1 : -1;
 }
 
-console.log(`${compare("Hello","hello")}`);
-console.log(`${compare("hello","hello")}`);
-console.log(`${compare("hello","Hello")}`);
+console.log(`${compare("Hello", "hello")}`);
+console.log(`${compare("hello", "hello")}`);
+console.log(`${compare("hello", "Hello")}`);
 
 interface Options {
-    width : number;
+    width: number;
 }
 
-function configure( x : Options | "auto"): void{
+function configure(x: Options | "auto"): void {
     console.log(`Width is ${x}`);
 }
 
-configure({width : 100});
+configure({ width: 100 });
 configure("auto");
 // configure("automatic");
