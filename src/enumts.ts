@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 enum COLORS {
     RED, BLACK, WHITE, GREEN, YELLOW
 }
 
 console.log(`Position of RED color is ${COLORS.RED}`);
 
-for (let x in COLORS) {
+for (const x in COLORS) {
     console.log(`${COLORS[x]} --> ${x}`);
 }
 
@@ -16,7 +17,7 @@ enum STUDENTS {
     RANI,
     RAM
 }
-for (let x in STUDENTS) {
+for (const x in STUDENTS) {
     console.log(`${STUDENTS[x]} --> ${x}`);
 }
 
@@ -32,11 +33,11 @@ console.log(StatusCodes.NotFound);
 console.log(StatusCodes.Success);
 
 enum CardinalDirections {
-    North = 'North',
+    North = "North",
     East = "East",
     South = "South",
     West = "West"
-};
+}
 // logs "North"
 console.log(CardinalDirections.North);
 // logs "West"

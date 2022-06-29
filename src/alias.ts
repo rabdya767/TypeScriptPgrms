@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 type carYear = number;
 type carType = string;
 type carModel = string;
@@ -18,5 +19,5 @@ const Car : car = {
     model : CarModel
 };
 //works fine in es2017 version or later
-// console.log(`Car is ${Object.keys(Car)} --> ${Object.values(Car)}`);
+console.log(`Car is ${Object.keys(Car)} --> ${Object.values(Car)}`);
 

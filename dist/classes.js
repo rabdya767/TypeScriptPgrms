@@ -1,4 +1,5 @@
 "use strict";
+/* eslint-disable @typescript-eslint/naming-convention */
 class Person {
     constructor(name) {
         this.gender = "MALE";

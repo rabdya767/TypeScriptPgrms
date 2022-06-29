@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 interface Rectangle {
     height: number,
     width: number
@@ -6,7 +7,7 @@ interface Rectangle {
 const rectangle: Rectangle = {
     height: 20,
     width: 10
-}
+};
 
 interface ColoredRectangle extends Rectangle {
     color: string
@@ -16,7 +17,7 @@ const coloredRectangle: ColoredRectangle = {
     height: 30,
     width: 15,
     color: "RED"
-}
+};
 
 console.log(`Rectangle height : ${rectangle.height} and width : ${rectangle.width}`);
 console.log(`ColouredRectangle height: ${coloredRectangle.height} width: ${coloredRectangle.width} and color: ${coloredRectangle.color}`);
@@ -28,8 +29,8 @@ console.log(`ColouredRectangle height: ${coloredRectangle.height} width: ${color
  * Using the | we are saying our parameter is a string or number
  */
 
-function printStatusCode(code: string | number){
-    console.log(`Status code is ${code} and type is ${typeof(code)}`);
+function printStatusCode(code: string | number): void {
+    console.log(`Status code is ${code} and type is ${typeof (code)}`);
 }
 
 printStatusCode(404);
