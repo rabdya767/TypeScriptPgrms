@@ -1,5 +1,5 @@
 "use strict";
-function OptionalParam(n) {
+function optionalParam(n) {
     if (n) {
         console.log(`My Id is ${n}`);
     }
@@ -7,5 +7,5 @@ function OptionalParam(n) {
         console.log(`Id is empty`);
     }
 }
-OptionalParam(12);
-OptionalParam();
+optionalParam(12);
+optionalParam();

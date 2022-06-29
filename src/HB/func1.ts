@@ -1,4 +1,4 @@
-function OptionalParam( n? :number ):void{
+function optionalParam( n? :number ):void{
     if(n){    
         console.log(`My Id is ${n}`);
     }else{
@@ -6,5 +6,5 @@ function OptionalParam( n? :number ):void{
     }
 }
 
-OptionalParam(12);
-OptionalParam();
+optionalParam(12);
+optionalParam();
