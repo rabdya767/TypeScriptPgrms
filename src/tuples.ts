@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * A tuple is a typed array with a pre-defined length and types for each index.
  * Tuples are great because they allow each element in the array to be a known type of value.
@@ -6,6 +7,7 @@
 
 let empDetails: [number, string, boolean];
 
+// eslint-disable-next-line prefer-const
 empDetails = [100, "Santhosh", true];
 
 console.log(`Emp details id : ${empDetails[0]} Name : ${empDetails[1]} and student : ${empDetails[2]}`);

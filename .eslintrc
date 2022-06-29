@@ -1,0 +1,193 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    // "eslint-config-standard",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  // "rules": {
+  //     "no-console":0
+  //  }
+  "rules": {
+    "no-console":0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "only-multiline",
+        "exports": "only-multiline",
+        "functions": "only-multiline"
+      }
+    ],
+    "no-extra-semi": 0,
+    "semi": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "tabWidth": 2
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"  //for always spaces before bracket
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "VariableDeclarator": "first",
+        "FunctionDeclaration": {
+          "parameters": "first"
+        },
+        "FunctionExpression": {
+          "parameters": "first"
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "ArrayExpression": "first",
+        "ObjectExpression": "first",
+        "ImportDeclaration": "first"
+      }
+    ],
+    "camelcase": "off", // must be off for TS rule
+    "@typescript-eslint/indent": [
+      "error",
+      4,
+      {
+        "VariableDeclarator": "first",
+        "FunctionDeclaration": {
+          "parameters": "first"
+        },
+        "FunctionExpression": {
+          "parameters": "first"
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "ArrayExpression": "first",
+        "ObjectExpression": "first",
+        "ImportDeclaration": "first"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "modifiers": [
+          "const"
+        ],
+        "format": [
+          "camelCase",
+          "UPPER_CASE",
+          "PascalCase",
+          "snake_case"
+        ]
+      },
+      {
+        "selector": "function",
+        "modifiers": [
+          "exported"
+        ],
+        "format": [
+          "camelCase"
+        ],
+        "leadingUnderscore": "forbid"
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase"
+        ]
+      },
+      {
+        "selector": "memberLike",
+        "format": [
+          "camelCase"
+        ],
+        "modifiers": [
+          "private"
+        ],
+        "leadingUnderscore": "require"
+      },
+      {
+        "selector": "property",
+        "format": [
+          "camelCase",
+          "UPPER_CASE",
+          "PascalCase",
+          "snake_case"
+        ]
+      },
+      {
+        "selector": "property",
+        "format": [
+          "camelCase"
+        ],
+        "modifiers": [
+          "private"
+        ],
+        "leadingUnderscore": "require"
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": "parameter",
+        "format": [
+          "camelCase"
+        ],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "default",
+        "format": [
+          "camelCase"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ]
+  }
+}
