@@ -8,7 +8,7 @@
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "start": "npm run build && node build/index.js",
-    "build": "rimraf ./build && tsc",
+    "build": "rm -Rf ./dist && tsc",
     "ts": "tsc -w"
   },
   "keywords": [
