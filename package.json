@@ -9,7 +9,8 @@
     "lint-and-fix": "eslint . --ext .ts --fix",
     "start": "npm run build && node build/index.js",
     "build": "rimraf ./build && tsc",
-    "ts": "tsc -w"
+    "ts": "tsc -w",
+    "rabdya": "npm install"
   },
   "keywords": [
     "typescript"
