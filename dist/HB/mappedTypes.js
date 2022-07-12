@@ -1,4 +1,3 @@
-"use strict";
 /* eslint-disable @typescript-eslint/no-unused-vars */
 let horseType;
 const conforms = {
