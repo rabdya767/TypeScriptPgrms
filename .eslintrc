@@ -14,7 +14,7 @@
   //     "no-console":0
   //  }
   "rules": {
-    "no-console":0,
+    "no-console": 0,
     "comma-dangle": [
       "error",
       {
@@ -50,7 +50,7 @@
     ],
     "array-bracket-spacing": [
       "error",
-      "never"  //for always spaces before bracket
+      "never" //for always spaces before bracket
     ],
     "indent": [
       "error",
@@ -153,7 +153,10 @@
       {
         "selector": "typeLike",
         "format": [
-          "PascalCase"
+          "PascalCase",
+          "camelCase",
+          "UPPER_CASE",
+          "snake_case"
         ]
       },
       {
