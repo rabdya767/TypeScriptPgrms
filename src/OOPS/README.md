@@ -203,3 +203,7 @@ animalSounds(animalList); // Output: Buddy barks. Fluffy meows.
 ```
 
 In this example, the `Animal` class is an abstract class that defines a property `name` and an abstract method `makeSound`. The `Dog` and `Cat` classes are the concrete implementations of the `Animal` class, which implement the `makeSound` method differently. The `animalSounds` function takes an array of `Animal` objects as a parameter and calls the `makeSound` method on each object, without knowing the specific implementation details of each animal.
+
+## Authors
+
+- [@rabdya767](https://github.com/rabdya767)
