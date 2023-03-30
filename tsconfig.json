@@ -98,6 +98,7 @@
   },
   "exclude": [
     "./src/alias.ts",
-    "./src/HB/extendTs.ts"
+    "./src/HB/extendTs.ts",
+    "./src/HB1/classes2.ts"
   ]
 }
